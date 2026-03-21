@@ -1,0 +1,186 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    CORABELLE SEMIJOIAS - WEBSITE                           ║
+║                      Instruções de Uso e Edição                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📦 CONTEÚDO DO ARQUIVO:
+
+1. index.html
+   - Página principal compilada e pronta para usar
+   - Abra diretamente no navegador (funciona sem servidor)
+   - Inclui todo o CSS e JavaScript necessários
+
+2. assets/
+   - index-[hash].css → Estilos compilados
+   - index-[hash].js → JavaScript compilado
+
+3. source-code/
+   - Código-fonte original em React + TypeScript
+   - Para editar o código, abra esta pasta em um editor
+
+4. README.md
+   - Documentação completa do projeto
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 OPÇÃO 1: USAR O SITE IMEDIATAMENTE
+
+1. Extraia o arquivo ZIP
+2. Abra "index.html" em qualquer navegador
+3. Pronto! O site está funcionando
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔧 OPÇÃO 2: EDITAR E CUSTOMIZAR
+
+Para fazer edições no código:
+
+PASSO 1: Abra em um Editor
+- Recomendado: Visual Studio Code (https://code.visualstudio.com)
+- Alternativas: Sublime Text, Atom, WebStorm
+- Abra a pasta "source-code" no editor
+
+PASSO 2: Localize os Arquivos para Editar
+- source-code/src/pages/Home.tsx → Conteúdo e estrutura da página
+- source-code/src/index.css → Estilos e cores
+- source-code/index.html → Título, meta tags, fontes
+
+PASSO 3: Faça suas Edições
+Exemplos de customizações:
+
+a) Mudar cores:
+   - Abra source-code/src/index.css
+   - Procure por "--primary: #daa46e;" (ouro)
+   - Mude para a cor desejada (ex: #ff6b6b)
+
+b) Mudar textos:
+   - Abra source-code/src/pages/Home.tsx
+   - Procure pelo texto que quer mudar
+   - Edite e salve
+
+c) Mudar imagens:
+   - Procure por "backgroundImage:" ou "<img src="
+   - Substitua a URL pela sua imagem
+
+PASSO 4: Compilar as Mudanças
+Se você tem Node.js instalado:
+
+```
+cd /caminho/para/corabelle-site
+pnpm install
+pnpm build
+```
+
+Os arquivos compilados aparecerão em dist/public/
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📱 RESPONSIVIDADE
+
+O site se adapta automaticamente para:
+✅ Celulares (320px - 640px)
+✅ Tablets (641px - 1024px)
+✅ Desktops (1025px+)
+
+Teste abrindo em diferentes dispositivos ou usando a ferramenta de
+desenvolvedor do navegador (F12 → Ctrl+Shift+M)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🌐 PUBLICAR ONLINE
+
+Para colocar o site na internet:
+
+OPÇÃO A: Usar Manus (Recomendado)
+- Plataforma integrada com hospedagem automática
+- Domínio personalizado incluído
+- Acesso via painel de controle
+
+OPÇÃO B: Usar Vercel (Gratuito)
+1. Crie conta em https://vercel.com
+2. Faça upload dos arquivos
+3. Seu site estará online em minutos
+
+OPÇÃO C: Usar Netlify (Gratuito)
+1. Acesse https://app.netlify.com
+2. Faça drag & drop da pasta
+3. Seu site estará publicado
+
+OPÇÃO D: Usar GitHub Pages (Gratuito)
+1. Crie repositório no GitHub
+2. Faça upload dos arquivos
+3. Ative GitHub Pages nas configurações
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📧 INTEGRAR FORMULÁRIO COM EMAIL
+
+Atualmente o formulário não envia emails. Para ativar:
+
+OPÇÃO 1: Formspree (Fácil)
+1. Acesse https://formspree.io
+2. Crie uma conta
+3. Copie o código de integração
+4. Cole em source-code/src/pages/Home.tsx
+
+OPÇÃO 2: Netlify Forms (Se usar Netlify)
+1. Adicione atributo netlify ao <form>
+2. Recompile e faça upload
+3. Pronto! Emails serão recebidos
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎨 CUSTOMIZAÇÕES COMUNS
+
+1. MUDAR CORES DA MARCA:
+   Arquivo: source-code/src/index.css
+   Procure por: :root { ... }
+   Edite as cores:
+   - --primary: #daa46e (ouro)
+   - --background: #fff4e3 (bege)
+   - --foreground: #1a1a1a (preto)
+
+2. MUDAR FONTES:
+   Arquivo: source-code/index.html
+   Procure por: <link href="https://fonts.googleapis.com
+   Altere as fontes do Google Fonts
+
+3. MUDAR IMAGENS:
+   Arquivo: source-code/src/pages/Home.tsx
+   Procure por: backgroundImage: "url('
+   Substitua pela URL da sua imagem
+
+4. MUDAR TEXTOS E CONTEÚDO:
+   Arquivo: source-code/src/pages/Home.tsx
+   Edite diretamente os textos
+
+═══════════════════════════════════════════════════════════════════════════════
+
+❓ DÚVIDAS FREQUENTES
+
+P: O site funciona sem servidor?
+R: Sim! Abra index.html diretamente no navegador.
+
+P: Preciso de Node.js para usar o site?
+R: Não para usar. Apenas se quiser editar o código-fonte.
+
+P: Posso usar meu próprio domínio?
+R: Sim! Ao publicar em Vercel, Netlify ou Manus, você pode usar domínio próprio.
+
+P: Como adicionar mais produtos?
+R: Edite source-code/src/pages/Home.tsx e adicione novos cards.
+
+P: Posso mudar o layout?
+R: Sim! Edite o HTML em Home.tsx e o CSS em index.css.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 SUPORTE
+
+Para dúvidas ou problemas:
+- Email: contato@corabelle.com.br
+- Documentação: Veja README.md
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Desenvolvido com ❤️ - Corabelle Semijoias
